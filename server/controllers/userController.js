@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // Connection Pool
 let connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-  password : process.env.DB_PASS
+  host: 'sql6.freesqldatabase.com',
+  user: 'sql6697192',
+  database: 'sql6697192',
+  password : 'feFUiZ7XWV'
 });
 
 // View Users
