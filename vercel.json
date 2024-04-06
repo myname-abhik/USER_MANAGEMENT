@@ -8,8 +8,36 @@
     ],
     "routes": [
       {
-        "src": "./server/route/user",
-        "dest": "user.js"
+        "src": "/",
+        "dest": "userController.view"
+      },
+      {
+        "src": "/",
+        "dest": "userController.find"
+      },
+      {
+        "src": "/adduser",
+        "dest": "userController.form"
+      },
+      {
+        "src": "/adduser",
+        "dest": "userController.create"
+      },
+      {
+        "src": "/edituser/:id",
+        "dest": "userController.edit"
+      },
+      {
+        "src": "/edituser/:id",
+        "dest": "userController.update"
+      },
+      {
+        "src": "/viewuser/:id",
+        "dest": "userController.viewall"
+      },
+      {
+        "src": "/:id",
+        "dest": "userController.delete"
       }
-    ]
+ ]
   }
