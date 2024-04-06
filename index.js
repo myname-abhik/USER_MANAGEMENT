@@ -4,7 +4,7 @@ const app = express();
 
 require('dotenv').config();
 
-const port = process.env.PORT||5000;
+// const port = process.env.PORT||5000;
 const bodyparser = require('body-parser');
 const mysql = require('mysql');
 
@@ -45,6 +45,6 @@ const routes = require('./server/route/user');
 const route1 = require('./server/route/user');
 app.use('/',route1)
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(5000, () => {
+  console.log(`Example app listening on port 5000`);
 });
