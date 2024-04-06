@@ -2,11 +2,11 @@ const express = require('express');
 var exphbs = require('express-handlebars');
 const app = express();
 
+require('dotenv').config();
 
 const port=process.env.PORT || 5000;
 const bodyparser = require('body-parser');
 const mysql = require('mysql');
-require('dotenv').config();
 
 app.use(express.urlencoded({extended:false}));
 // app.use(bodyparser.urlencoded({extended:false}));
