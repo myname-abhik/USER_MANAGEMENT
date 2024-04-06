@@ -8,36 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/",
-        "dest": "/"
-      },
-      {
-        "src": "/",
-        "dest": "/"
-      },
-      {
-        "src": "/adduser",
-        "dest": "/"
-      },
-      {
-        "src": "/adduser",
-        "dest": "/"
-      },
-      {
-        "src": "/edituser/:id",
-        "dest": "/"
-      },
-      {
-        "src": "/edituser/:id",
-        "dest": "/"
-      },
-      {
-        "src": "/viewuser/:id",
-        "dest": "/"
-      },
-      {
-        "src": "/:id",
-        "dest": "/"
+        "src": "/(.*)",
+        "dest": "index.js"
       }
- ]
+    ]
   }
