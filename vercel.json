@@ -9,35 +9,35 @@
     "routes": [
       {
         "src": "/",
-        "dest": "userController.view"
+        "dest": "/"
       },
       {
         "src": "/",
-        "dest": "userController.find"
+        "dest": "/"
       },
       {
         "src": "/adduser",
-        "dest": "userController.form"
+        "dest": "/"
       },
       {
         "src": "/adduser",
-        "dest": "userController.create"
+        "dest": "/"
       },
       {
         "src": "/edituser/:id",
-        "dest": "userController.edit"
+        "dest": "/"
       },
       {
         "src": "/edituser/:id",
-        "dest": "userController.update"
+        "dest": "/"
       },
       {
         "src": "/viewuser/:id",
-        "dest": "userController.viewall"
+        "dest": "/"
       },
       {
         "src": "/:id",
-        "dest": "userController.delete"
+        "dest": "/"
       }
  ]
   }
