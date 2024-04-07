@@ -14,11 +14,12 @@ app.use(express.urlencoded({extended:false}));
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
 //static files
-const staticPath = path.join(__dirname,"public");
+const staticPath = path.join(__dirname,"views");
+app.set('views',staticPath);
 app.set('view engine', '.hbs');
-app.use(express.static(staticPath));
-const handlebars = exphbs.create({ extname: '.hbs',});
-app.engine('.hbs', handlebars.engine);
+// app.use(express.static(staticPath));
+// const handlebars = exphbs.create({ extname: '.hbs',});
+// app.engine('.hbs', handlebars.engine);
 
   
 
