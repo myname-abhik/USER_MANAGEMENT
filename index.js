@@ -36,7 +36,7 @@ app.engine('.hbs', handlebars.engine);
 //     console.log('connected as id '+ connection.threadId);
 // });
 
-const routes = require('../server/route/user');
+const routes = require('./server/route/user');
 app.use('/', routes);
 
 
