@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
-// router.use(express.urlencoded({extended:false}));
+router.use(express.urlencoded({extended:false}));
 
 // Routes
 router.get('/', userController.view);
