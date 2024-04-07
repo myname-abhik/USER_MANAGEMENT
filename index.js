@@ -18,8 +18,8 @@ const staticPath = path.join(__dirname,"views");
 app.set('views',staticPath);
 app.set('view engine', '.hbs');
 // app.use(express.static(staticPath));
-// const handlebars = exphbs.create({ extname: '.hbs',});
-// app.engine('.hbs', handlebars.engine);
+const handlebars = exphbs.create({ extname: '.hbs',});
+app.engine('.hbs', handlebars.engine);
 
   
 
