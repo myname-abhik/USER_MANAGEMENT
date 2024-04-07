@@ -14,10 +14,13 @@ app.use(express.urlencoded({extended:false}));
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
 //static files
-app.use(express.static('public'));
+const staticPath = path.join(__dirname,"public");
+app.set('view engine', '.hbs');
+app.use(express.static(staticPath));
 const handlebars = exphbs.create({ extname: '.hbs',});
 app.engine('.hbs', handlebars.engine);
-app.set('view engine', '.hbs');
+
+  
 
 //connection pull
 // const pool = mysql.createPool({

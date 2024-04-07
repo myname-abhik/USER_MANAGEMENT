@@ -8,7 +8,7 @@ let connection = mysql.createConnection({
   password : 'feFUiZ7XWV'
 });
 
-// View Users
+// // View Users
 exports.view = (req, res) => {
   // User the connection
   connection.query('SELECT * FROM user WHERE status = "active" ', (err, rows) => {
