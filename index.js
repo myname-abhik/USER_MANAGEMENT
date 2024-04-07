@@ -37,7 +37,7 @@ app.engine('.hbs', handlebars.engine);
 // });
 
 const routes = require('./server/route/user');
-// app.use('/', routes);
+app.use('/', routes);
 
 
 
@@ -47,8 +47,8 @@ const routes = require('./server/route/user');
 // app.get('', (req, res) => {
 //   return res.render('home.hbs');
 // });
-const route1 = require('./server/route/user');
-app.use('/',route1)
+// const route1 = require('./server/route/user');
+// app.use('/',route1)
 
 app.listen(5000, () => {
   console.log(`Example app listening on port 5000`);
