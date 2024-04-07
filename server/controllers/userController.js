@@ -15,7 +15,7 @@ exports.view = (req, res) => {
     // When done with the connection, release it
     if (!err) {
       // let removedUser = req.query.removed;
-      res.render('home.hbs', {rows});
+      res.render('./partials/home', {rows});
       // res.json({start :"hello"});
     } else {
       console.log(err);
