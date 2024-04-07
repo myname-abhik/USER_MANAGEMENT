@@ -15,8 +15,8 @@ app.use(express.urlencoded({extended:false}));
 // app.use(bodyparser.json());
 //static files
 app.use(express.static('public'));
-// const handlebars = exphbs.create({ extname: '.hbs',});
-// app.engine('.hbs', handlebars.engine);
+const handlebars = exphbs.create({ extname: '.hbs',});
+app.engine('.hbs', handlebars.engine);
 app.set('view engine', '.hbs');
 
 //connection pull
