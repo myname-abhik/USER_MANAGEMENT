@@ -11,8 +11,8 @@ const hbs = require('hbs');
 const path = require('path');
 
 app.use(express.urlencoded({extended:false}));
-// app.use(bodyparser.urlencoded({extended:false}));
-// app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended:false}));
+app.use(bodyparser.json());
 //static files
 app.use(express.static('public'));
 const handlebars = exphbs.create({ extname: '.hbs',});
