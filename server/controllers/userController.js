@@ -16,7 +16,7 @@ exports.view = (req, res) => {
     if (!err) {
       // let removedUser = req.query.removed;
       // res.render('home', {rows});
-      return res.json({start :"hello"});
+      res.json({start :"hello"});
     } else {
       console.log(err);
     }
