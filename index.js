@@ -7,14 +7,16 @@ require('dotenv').config();
 // const port = process.env.PORT||5000;
 const bodyparser = require('body-parser');
 const mysql = require('mysql');
+const hbs = require('hbs');
+const path = require('path');
 
 app.use(express.urlencoded({extended:false}));
 // app.use(bodyparser.urlencoded({extended:false}));
 // app.use(bodyparser.json());
 //static files
 app.use(express.static('public'));
-const handlebars = exphbs.create({ extname: '.hbs',});
-app.engine('.hbs', handlebars.engine);
+// const handlebars = exphbs.create({ extname: '.hbs',});
+// app.engine('.hbs', handlebars.engine);
 app.set('view engine', '.hbs');
 
 //connection pull
