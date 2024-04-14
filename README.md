@@ -1,3 +1,3 @@
 ﻿
 # USER_MANAGEMENT
-https://user-management-neon-gamma.vercel.app/
+https://user-management-gray.vercel.app/
