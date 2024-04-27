@@ -49,7 +49,7 @@ exports.find = (req, res) => {
   // i=i+1;
 
   // User the connection
-  connection.query('INSERT INTO user SET id=? , first_name = ?, last_name = ?, email = ?, phonr = ?', [id,first_name, last_name, email, phone], (err, rows) => {
+  connection.query('INSERT INTO user SET first_name = ?, last_name = ?, email = ?, phonr = ?', [first_name, last_name, email, phone], (err, rows) => {
     if (!err) {
      
       res.render('add-user', { alert: 'User added successfully.' });
